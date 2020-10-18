@@ -1,0 +1,11 @@
+/* Resume Preview */
+.resumeContainer {
+  padding: 0;
+  border: 5px solid var(--color-blue);
+  width: 75%;
+  height: 1150px;
+}
+
+/* .resumeContainer:hover {
+  border: 5px solid var(--color-blue);
+} */

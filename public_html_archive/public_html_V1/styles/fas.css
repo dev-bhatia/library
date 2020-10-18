@@ -1,0 +1,6 @@
+.fas {
+    margin-right: 18px;
+    font-size: calc(1rem + 1vw);
+    font-weight: 100;
+    color: var(--main-tx-color);
+}

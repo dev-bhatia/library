@@ -1,0 +1,140 @@
+/* inter font */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.light {
+  --main-bg-color: #FFF;
+
+  /* Text Colors */
+  --main-tx-color: #000;
+  --main-tx-2-color: rgb(147, 147, 147);
+  --main-link-color: #98ff86;
+
+  /* Accordian Colors */
+  --accordian-main: #FFF;
+  --accordian-hover: #DDD;
+  --accordian-active: #EEE;
+}
+
+.dark {
+  --main-bg-color: #222;
+
+  /* Text Colors */
+  --main-tx-color: #FFF;
+  --main-tx-2-color: #AAA;
+  --main-link-color: #005e98;
+
+  /* Accordian Colors */
+  --accordian-main: #222;
+  --accordian-hover: #444;
+  --accordian-active: #333;
+}
+
+.wrapper {
+    width: 70%;
+    align-items: center;
+    text-align: left;
+    color: var(--main-tx-color);
+}
+
+html, body {
+    background: var(--main-bg-color);
+    height: 100%;
+}
+
+/* HEADING */
+h1 {
+  font-size: calc(1rem + 2vw);
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: calc(1rem + 0.75vw);
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+    font-size: calc(0.75rem + 0.5vw);
+    font-weight: 200;
+    margin: 0;
+}
+
+/* CONTENT */
+h4 {
+    font-size: calc(1rem + 0.4vw);
+    font-weight: 600;
+    text-align: left;
+}
+
+h5 {
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 300;
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.75;
+}
+
+i {
+  color: var(--main-tx-2-color);
+  font-weight: 300;
+}
+
+b {
+  font-weight: 600;
+}
+
+a, a:visited {
+  color: var(--main-tx-2-color);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  align-content: center;
+
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  z-index: -5;
+  left: 0;
+  right: 100%;
+  bottom: 20%;
+  background: var(--main-link-color);
+  height: 10px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+a:hover, a:active,
+a:hover:before, a:focus:before, a:active:before {
+  right: 0;
+  color: var(--main-tx-color);
+}
+
+footer{
+  padding: 50px 0;
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width : 1000px) {
+    .wrapper {
+        width: 85%;
+    }
+}   
