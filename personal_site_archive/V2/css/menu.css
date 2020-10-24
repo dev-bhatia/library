@@ -1,0 +1,97 @@
+menu.hmenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu {
+    max-height: 37px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+menu.hmenu:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 0;
+  height: 0;
+  margin-top: -3px;
+  border-width: 6px 6px 0;
+  border-style: solid;
+  border-color: transparent;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu:after {
+    display: block;
+  }
+}
+menu.hmenu menuitem {
+  flex: 1 0 0;
+  margin: 0.25rem;
+  transition: opacity 0.2s ease;
+  width: 60%;
+  padding: 5px 0;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu menuitem {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+  menu.hmenu menuitem:not(:nth-of-type(1)) {
+    opacity: 0;
+    pointer-event: none;
+  }
+}
+menu.hmenu menuitem:nth-of-type(1) {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu menuitem:nth-of-type(1) {
+    display: block;
+    margin-top: 0;
+    color: #000;
+  }
+}
+menu.hmenu menuitem a, menu.hmenu menuitem span {
+  font-size: calc(1rem + 0.6vw);
+  color: #000;
+  text-decoration: none;
+  line-height: 2;
+  text-align: left;
+  align-content: initial;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu menuitem a, menu.hmenu menuitem span {
+    color: #000;
+  }
+}
+menu.hmenu menuitem.active a {
+  color: #000;
+}
+menu.hmenu menuitem a:hover {
+  color: #000;
+}
+menu.hmenu menuitem span {
+  color: #000;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  menu.hmenu.open menuitem:not(:nth-of-type(1)) {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: var(--color-light-gray2);
+  }
+  menu.hmenu {
+      width: 100%;
+  }  
+}

@@ -1,0 +1,212 @@
+/* inter font */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+/* gradient animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/*Fade in animation*/
+/* @keyframes fade-in{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+} */
+
+/* color palatte */
+:root {
+    /* text */
+    /* --gradient-spiderman: linear-gradient(-90deg,#909590, #50808E, #909590, #84B59F); */
+    --color-green: #98ff86;
+    --color-blue: #8599ff;
+    --color-gray: #8d8d8d;
+    --color-yellow: rgb(249, 249, 249);
+    --color-blue2: rgb(70, 108, 205);
+    --color-youtube-red: #FF0000;
+    --color-light-gray1: rgb(220, 220, 220);
+    --color-light-gray2: rgba(235, 235, 235, 1);
+    --background: #FFF;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    background: var(--background);
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: calc(1rem + 3vw);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+h2 {
+    font-size: calc(1rem + 1vw);
+    font-weight: 650;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 2%;
+}
+
+h3 {
+    font-size: calc(1rem + 0.3vw);
+    font-weight: 450;
+    margin-left: 10%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+h4 {
+    font-size: calc(1rem + 0.25vw);
+    font-weight: 300;
+    margin-left: 10%;
+    margin-right: 15%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+p {
+    font-weight: normal;
+    font-size: calc(1rem + 0.25vw);
+    margin-left: 5%;
+    margin-right: 15%;
+    text-align: left;
+    line-height: 2;   
+}
+
+h4 a, p a {
+    font-size: inherit;
+    color: #000;
+}
+
+/* section, footer{
+    animation: fade-in 1s ease;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+} */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    width: 100%;
+    color: var(--color-gray);
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 200;
+    height: 200px;
+    line-height: 1;
+    align-items: center;
+}
+
+a, a:visited {
+    font-size: calc(1rem + 0.6vw);
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: left;
+    align-content: center;
+
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    right: 100%;
+    bottom: 20%;
+    color: #000;
+    background: var(--color-green);
+    height: 10px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+a:hover, a:active,
+a:hover:before, a:focus:before, a:active:before {
+    right: 0;
+}
+
+hr {
+    width: 55%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+b {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    /* background: var(--gradient-spiderman);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+sup {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-size: calc(1rem + 0.3vw);
+}
+
+.resume {
+    width: 60%;
+}
+/* for small screens */
+@media screen and (max-width : 1000px) {
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    hr {
+        width: 75%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    h4 {
+        font-size: calc(1rem + 0vw);
+        font-weight: 300;
+        margin-left: 10%;
+        margin-right: 15%;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 2px;
+        text-align: left;
+    }
+    .resume {
+        width: 100%;
+    }
+}

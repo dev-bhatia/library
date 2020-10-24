@@ -20,6 +20,10 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+$(".rotate").click(function(){
+  $(this).toggleClass("down"); 
+});
+
 //Theme function: Detects the time of day and sets theme
 //depending on day or night.
 $(function () {
