@@ -1,0 +1,30 @@
+.clearPanel {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+  color: var(--text);
+  /* box-shadow: 10px 10px 18px 0 rgba(0, 0, 0, 0.1),
+    -10px -10px 18px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: -10px -10px 20px 0px rgba(255, 255, 255, 0.05),
+    10px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    -10px -10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.fullPanel {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+  color: var(--text);
+  box-shadow: 5px 5px 18px 0 rgba(0, 0, 0, 0.2),
+    -5px -5px 18px 0 rgba(0, 0, 0, 0.01);
+}
+
+@media screen and (max-width: 1000px) {
+  .clearPanel {
+    width: 80%;
+  }
+}

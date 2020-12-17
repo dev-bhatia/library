@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JWHFC11PBP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JWHFC11PBP");
+    </script>
+
+    <!-- DEFAULTS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dev Bhatia" />
+    <meta name="description" content="Dev Bhatia's Personal Website" />
+    <meta name="keywords" content="Engineer, Personal Website, Blog, UCSD" />
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-16x16.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-32x32.png"
+    />
+
+    <!-- SITE TITLE ON TAB-->
+    <title>Dev Bhatia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="panels.css" />
+    <link rel="stylesheet" type="text/css" href="accordian.css" />
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body>
+    <center>
+      <div class="top">
+        <!-- NAME/HOME LINK -->
+        <a
+          href="/"
+          id="header"
+          style="display: inline-block"
+          data-tilt
+          data-tilt-scale="1.1"
+        >
+          <h1>Dev Bhatia</h1>
+          <h2>devbhatia.me</h2>
+        </a>
+        <br />
+        <br />
+        <h3>
+          I'm a
+            <span id="e1">senior at UC San Diego</span> pursuing a
+            <span id="e2">BS in Electrical Engineering</span>.
+          <!-- CONTACT -->
+          <div id="contact" style="display: inline-block; padding-top: 30px">
+            <a
+              href="https://www.linkedin.com/in/dev-bhatia"
+              target="_blank"
+              id="pad"
+            >
+              &nbsp;&nbsp;&nbsp;
+              <i class="fab fa-linkedin" id="h3"></i>
+              &nbsp;LinkedIn
+            </a>
+            <a
+              href="https://www.github.com/dev-bhatia"
+              target="_blank"
+              id="pad"
+            >
+              &nbsp;&nbsp;&nbsp;
+              <i class="fab fa-github"></i>
+              &nbsp;GitHub
+            </a>
+            <a onclick="copyEmail()" id="pad">
+              &nbsp;&nbsp;&nbsp;
+              <i class="far fa-envelope"></i>
+              <span
+                style="cursor: pointer"
+                onclick="this.textContent = ('&nbsp;' + 'devjbhatia' + '@gmail' + String.fromCharCode(46) + 'com'); this.onclick = null; this.style.cursor='default'"
+              >
+                &nbsp;Email&nbsp;(click&nbsp;to&nbsp;reveal)
+              </span>
+            </a>
+          </div>
+        </h3>
+        <br />
+        <br />
+        <div class="fullPanel">
+          <h5 id="a3" style="display: inline-block">Projects</h5>
+          <h3>
+            <ul>
+              <li>
+                <a href="https://www.habitle.com" target="_blank"
+                  >Habitle - simple habit tracker (work in progress)</a
+                >
+              </li>
+              <li>
+                <a href="/amazonMusicDarkMode"
+                  >AmazonMusic Dark Mode (archieved)</a
+                >
+              </li>
+            </ul>
+          </h3>
+        </div>
+        <br />
+        <br />
+        <div class="fullPanel">
+          <h5 id="a3" style="display: inline-block">Notes</h5>
+          <h3>
+            <ul>
+              <li>
+                <a href="/resume"
+                  >Resume Advice after working 1.5 years at the Career Center</a
+                >
+              </li>
+            </ul>
+          </h3>
+        </div>
+        <br />
+        <br />
+        <div class="fullPanel">
+          <p>
+            This site exists to better document some of the stuff I've been
+            working on. No frameworks are used, just plain old HTML/CSS with
+            minimal JavaScript. The
+            <a href="" target="_blank">Inter&nbsp;typeface</a> is used across
+            this site. And, the <a href="#" target="_blank">tilt.js</a> and <a
+              href="#"
+              target="_blank"
+              >RoughNotation</a
+            >
+            libraries are used for the animations. Thanks for checking this out!
+          </p>
+        </div>
+      </div>
+    </center>
+
+    <!-- MIND THE GAP -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>Last Updated November 2020</center>
+    <br />
+    <br />
+
+    <!-- SCRIPTS -->
+    <script type="module" src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/tilt.jquery.js" type="text/javascript"></script>
+    <script type="module" src="js/accordian.js"></script>
+  </body>
+</html>
