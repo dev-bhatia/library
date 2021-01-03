@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume By Dev | Services</title>
+    <meta
+      name="description"
+      content="1:1 Career Advising for Students, Recent Grads, and Early Professionals. 
+               FREE CONSULTATION. Providing resume preperation, mock interviews, & networking strategies! 
+               Get you job application tracker & ATS Resume Parser today too! 
+               Supporting applicants in technology, engineering, business, and operations."
+    />
+    <!-- FIREBASE STUFF -- />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.22.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.22.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-performance.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-32x32.png"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/hover.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <center>
+      <header class="header">
+        <ul>
+          <div id="logo-mine">
+            <a href="/">
+              <h1>Resume</h1>
+              <h2>By Dev</h2>
+            </a>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Schedule Now</a></li>
+        </ul>
+      </header>
+    </center>
+    <!-- OVERLAY -->
+    <center>
+      <section class="nav">
+        <div id="overlay-logo">
+          <a href="#">
+            <h1>Resume</h1>
+            <h2>By Dev</h2>
+          </a>
+        </div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;&nbsp;Close</a
+          >
+          <div class="overlay-content">
+            <a id="menuitem" href="#" onclick="closeNavDelay()">About</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Services</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Reveiws</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()"
+              >Schedule&nbsp;Now</a
+            >
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Contact</a>
+            <a class="overlay-footer">
+              <br />
+              <br />
+              <h1>Resume</h1>
+              <h2>By Dev</h2>
+              <h3>&copy; Dev Bhatia 2020</h3>
+            </a>
+          </div>
+        </div>
+        <span class="NavButton" onclick="openNav()"> Menu </span>
+      </section>
+    </center>
+    <!-- INTRO WITH PIC -->
+    <center>
+      <div class="content">
+        <center></center>
+        <!-- END OF CONTENT-->
+      </div>
+    </center>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <center>
+        <div style="width: 80%">
+          <h1><a href="/">Resume by Dev</a></h1>
+          <h2>
+            1:1 Career Advising for Students, Recent Grads, and
+            Early&nbsp;Professionals
+          </h2>
+        </div>
+      </center>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Disclaimers</a></li>
+      </ul>
+      <div id="copyright">&copy; Dev Bhatia 2020</div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      function closeNavDelay() {
+        setTimeout(function () {
+          document.getElementById("myNav").style.width = "0%";
+        }, 500);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Resume By Dev | Career Consulting, Resume Building, & Job Search
+      Strategies
+    </title>
+    <meta
+      name="description"
+      content="1:1 Career Advising for Students, Recent Grads, and Early Professionals. 
+               FREE CONSULTATION. Providing resume preperation, mock interviews, & networking strategies! 
+               Get you job application tracker & ATS Resume Parser today too! 
+               Supporting applicants in technology, engineering, business, and operations."
+    />
+    <!-- FIREBASE STUFF -- />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.22.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.22.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/7.22.0/firebase-performance.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-32x32.png"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/hover.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <center>
+      <header class="header">
+        <ul>
+          <div id="logo-mine">
+            <a href="/">
+              <h1>Resume</h1>
+              <h2>By Dev</h2>
+            </a>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Schedule Now</a></li>
+        </ul>
+      </header>
+    </center>
+    <!-- OVERLAY -->
+    <center>
+      <section class="nav">
+        <div id="overlay-logo">
+          <a href="#">
+            <h1>Resume</h1>
+            <h2>By Dev</h2>
+          </a>
+        </div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;&nbsp;Close</a
+          >
+          <div class="overlay-content">
+            <a id="menuitem" href="#" onclick="closeNavDelay()">About</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Services</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Reveiws</a>
+            <a id="menuitem" href="#" onclick="closeNavDelay()"
+              >Schedule&nbsp;Now</a
+            >
+            <a id="menuitem" href="#" onclick="closeNavDelay()">Contact</a>
+            <a class="overlay-footer">
+              <br />
+              <br />
+              <h1>Resume</h1>
+              <h2>By Dev</h2>
+              <h3>&copy; Dev Bhatia 2020</h3>
+            </a>
+          </div>
+        </div>
+        <span class="NavButton" onclick="openNav()"> Menu </span>
+      </section>
+    </center>
+    <!-- INTRO WITH PIC -->
+    <center>
+      <div class="content">
+        <center>
+          <section class="grid2">
+            <aside>
+              <div>
+                <img
+                  src="assets/profile.png"
+                  alt="Profile Image"
+                  class="profile-pic"
+                />
+              </div>
+            </aside>
+            <aside id="info">
+              <h1>Hello, I'm Dev</h1>
+              <h2>
+                I started Resume by Dev to provide affordable 1:1 resume
+                building & interveiw preperation for students, recent grads, &
+                early professionals.
+                <b>
+                  <a href="/schedule-now.html" class="hvr-underline-from-left">
+                    <i class="far fa-dot-circle"></i>
+                    Schedule&nbsp;a&nbsp;FREE&nbsp;consultation
+                  </a>
+                  <a href="/contact.html" class="hvr-underline-from-left">
+                    <i class="far fa-question-circle"></i>
+                    Questions?&nbsp;Contact&nbsp;Me
+                  </a>
+                </b>
+              </h2>
+            </aside>
+          </section>
+          <br /><br />
+          <!-- MY BACKGROUND -->
+          <div class="fullPanel">
+            <h1>My Background</h1>
+            <p>
+              I've helped many students with resumes and interview prep over the
+              1.5 years I've worked at the UC San Diego Career Center. And, I've
+              gone through the process of obtaining internships at Tesla,
+              Microsoft, & Intel in addition to landing interviews with SpaceX,
+              Amazon, Apple, Bloomberg, & VISA for full-time/intern roles. I
+              provide services in builidng resumes, writing cover letters, and
+              interview preperation.
+            </p>
+            <div class="logo-grid">
+              <img
+                id="logo"
+                src="assets/logos/tesla.png"
+                alt="tesla"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/microsoft.png"
+                alt="msft"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/intel.png"
+                alt="intel"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/spacex.png"
+                alt="spacex"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/visa.png"
+                alt="visa"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/bloomberg.png"
+                alt="bloomberg"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/amazon.png"
+                alt="amzn"
+                class="el-tilt"
+                data-tilt
+              />
+              <img
+                id="logo"
+                src="assets/logos/apple.png"
+                alt="apple"
+                class="el-tilt"
+                data-tilt
+              />
+            </div>
+          </div>
+          <br />
+          <!-- WEBINAR EMBED -->
+          <div class="fullPanel">
+            <h1>Sneak Peak</h1>
+            <p>
+              In Fall of 2020, with the UC San Diego Career Center, I was
+              interviewed on this webinar attened by ~100 people on my tips and
+              strategies to getting hired for engineering roles. Our session
+              will be tailored to your experiences and goals with my networking
+              strategies, resume building/review, & acing interviews.
+            </p>
+            <iframe
+              class="youtube-embed"
+              width="480"
+              height="362"
+              src="https://www.youtube.com/embed/5sZXZ7gAxU8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </center>
+        <!-- END OF CONTENT-->
+      </div>
+    </center>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <center>
+        <div style="width: 80%">
+          <h1><a href="/">Resume by Dev</a></h1>
+          <h2>
+            1:1 Career Advising for Students, Recent Grads, and
+            Early&nbsp;Professionals
+          </h2>
+        </div>
+      </center>
+
+      <ul>
+        <li>
+          <a href="https://forms.gle/DfdoUK9W1Zn4HtPw6" target="_blank"
+            >Contact</a
+          >
+        </li>
+        <li><a href="https://www.resumebydev.com/reviews">Reviews</a></li>
+        <li>
+          <a
+            href="https://www.resumebydev.com/info#privacypolicy"
+            target="_blank"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a href="https://www.resumebydev.com/info#terms" target="_blank"
+            >Terms & Conditions</a
+          >
+        </li>
+        <li>
+          <a href="https://www.resumebydev.com/info#disclaimer" target="_blank"
+            >Disclaimers</a
+          >
+        </li>
+      </ul>
+
+      <div id="copyright">&copy; Dev Bhatia 2020</div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      function closeNavDelay() {
+        setTimeout(function () {
+          document.getElementById("myNav").style.width = "0%";
+        }, 500);
+      }
+    </script>
+  </body>
+</html>

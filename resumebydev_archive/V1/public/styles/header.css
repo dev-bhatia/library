@@ -1,0 +1,90 @@
+:root {
+  --header-text: #222;
+  --header-link: #e8e8e8;
+  /* --header-link-hover: #3b93ff; */
+  --header-link-hover: #0676ff;
+}
+
+.header {
+  width: 100vw;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.header li {
+  font-size: 1.4em;
+  color: var(--text);
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.5em 0.5em;
+  letter-spacing: 1px;
+}
+
+#logo-mine {
+  flex-basis: 20vw;
+}
+
+#logo-mine h1 {
+  margin: 0 0;
+  padding: 0 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 2em;
+}
+
+#logo-mine h2 {
+  margin: 0 0;
+  padding: 0 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 1.7em;
+}
+
+#logo-mine a,
+#logo-mine a:visited {
+  text-decoration: none;
+  color: var(--header-text);
+}
+
+#logo-mine a:hover {
+  color: var(--header-link-hover);
+}
+
+.header li a,
+.header li a:visited {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: var(--header-text);
+  border: 3px solid var(--header-link);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+.header li a:hover {
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: var(--header-link-hover);
+  border: 3px solid var(--header-link-hover);
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    display: none;
+  }
+}
